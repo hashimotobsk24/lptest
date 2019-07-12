@@ -1,0 +1,265 @@
+.menubar {
+    height: 75px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 50;
+}
+
+.nuv {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 40px;
+  width: 150px; */
+}
+.menubar li a {
+    color: gold;
+    font-size: 30px; 
+    text-decoration: none;
+    padding:10px;
+    padding-right: 20px;
+    padding-left: 20px; 
+    border: 1px solid gold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.topimg {
+    height: 100vh;
+    width: 100%;
+    background-image: url(./img/mixx-image.jpg);
+    background-size: auto;
+    background-position: center;
+}
+
+.sub {
+    height: 75px;
+    width: 100%;
+    background-color: #c8ac54;  
+}
+
+.sub p{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+.whatcc {
+    display: flex;
+}
+
+.sentence {
+    background-image: url(./img/bg_map.jpg);
+    width: 60%;
+    height: 100vh;
+}
+
+.sentence p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+.ccimg {
+    background-image: url(./img/ccmain.jpg);
+    width: 40%;
+    height: 100vh;
+}
+
+.mounten {
+    background-image: url(./img/bg_mv.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    outline: 2px solid gold;
+    outline-offset: -10px;
+    height: 900px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mounten img {
+    height: 500px;
+    width: auto;
+}
+
+.rogoanime {
+    display: none;
+}
+
+.histry {
+    background-image: url(./img/img_person.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 200px;
+    width: 100%;
+    position: relative;
+    transition-duration: 0.3s;
+    /* hoverの変化の時間 */
+}
+
+.histry:hover {
+    /* 画像の拡大 */
+    transform: scale(1.2,1.2);
+    cursor: pointer;
+}
+
+.histry p {
+    color: #c8ac54;
+    font-size: 60px; 
+    padding: 10px 20px 10px 20px;  
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translateY(-50%)translateX(-50%);
+}
+
+.products {
+    background-image: url(./img/bg_map.jpg);
+    background-size: contain;
+    height: 200px;;
+    width: 100%;
+    position: relative;
+    transition-duration: 0.3s;
+}
+
+.products:hover {
+    /* 画像の拡大 */
+    transform: scale(1.2,1.2);
+    cursor: pointer;
+}
+
+.products p { 
+    color: #c8ac54;
+    font-size: 60px;   
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translateY(-50%)translateX(-50%);
+}
+
+.cocktail {
+    background-image: url(./img/mixx-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 200px;;
+    width: 100%;
+    position: relative;
+    transition-duration: 0.3s;
+}
+
+.cocktail:hover {
+    /* 画像の拡大 */
+    transform: scale(1.2,1.2);
+    cursor: pointer;
+}
+
+.cocktail p {
+    color: white;
+    font-size: 60px;   
+    -webkit-text-stroke: 1px #c8ac54;
+    /* border: 2px solid white; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translateY(-50%)translateX(-50%);
+}
+
+.rogo {
+    background-color: white;
+    /* background-image: url(./img/ccimg.jpg) */
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+} 
+
+.ccanime {
+    background-image: url(./img/ccimg.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: none;
+}
+
+footer {
+    background-color: antiquewhite;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer h1 {
+    text-align: center;
+    margin: 30px;
+    font-size: 40px;
+}
+
+.btn {
+    font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: black;
+    width: 40%;
+}
+
+.btn-box {
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    font-size: 16px;
+    color: #c8ac54;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 24px;
+    position: relative;
+     border: 2px solid #c8ac54;
+     transition: .4s;
+}
+
+.btn-box:hover {
+    border: 2px solid transparent;
+    color: #fff;
+}
+
+.btn-box:before, .btn-box:after {
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-sizing: border-box;
+    transform: scale(0);
+    transition: .2s;
+}
+
+.btn-box::before {
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+    transform-origin: 100% 0%;
+}
+
+.btn-box::after {
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform-origin: 0% 100%;
+}
+
+
+.btn-box:hover::after,
+.btn-box:hover::before {
+    transform: scale(1);
+}
